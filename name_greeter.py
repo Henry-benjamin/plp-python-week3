@@ -1,7 +1,7 @@
-full_name = input("type your Full name: ")
-split = full_name.split()
+full_name = input("Enter your full name: ")
+parts = full_name.split()
 
-if len(split) == 2:
-    print(f"Hello {split[0]}")
-elif len(split) == 1:
-    print("Hee, type your full name Please ")
+if len(parts) >= 2:
+    print(f"Hello, {parts[0]}!")
+else:
+    print("Please enter your full name.")
